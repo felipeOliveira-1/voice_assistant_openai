@@ -1,3 +1,4 @@
+import os
 import openai
 import pyttsx3
 
@@ -73,6 +74,10 @@ def main():
                           
                           # Read the response using text-to-speech
                           speak_text(response)
+                          
+                          # Remove the file
+                          os.remove(filename)
+                          
               except Exception as e:
                   print("An error occurred: {}".format(e))
                   
