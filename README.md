@@ -8,9 +8,11 @@ openai
 pyttsx3
 speech_recognition
 To install these libraries, run the following command:
+
 ``
 pip install openai pyttsx3 SpeechRecognition
 ``
+
 ## Usage
 To use the AI Voice Assistant, simply run the jarvis_voice.py script. The program will listen for the user to say "Jarvis" to initiate a voice command. Once initiated, the program will record the user's voice input, transcribe it to text, generate a response using OpenAI's GPT-3, and then speak the response back to the user.
 
